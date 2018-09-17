@@ -1,0 +1,119 @@
+/* layout and globel */
+@import url(http://weloveiconfonts.com/api/?family=entypo);
+[class*="entypo-"]:before {
+  font-family: 'entypo', sans-serif;
+  color: #009688;
+  font-size: 16px;
+  margin: 15px;
+}
+.container {
+    margin: 0;
+    background-color: lightgray;
+    display: grid;
+    height: 1000px;
+    grid-gap: 20px;
+}
+.container>div{
+    border: 1px solid;
+}
+p{
+  font-size: 16px;
+}
+.item{
+    background-color: whitesmoke;
+    box-shadow: 8px 8px 12px #888888;
+}
+
+/* aside bar */
+.item1 {
+    grid-area: header;
+}
+img{
+    height: auto;
+    width: 100%;
+}
+.title{
+    font-weight: 700;
+    font-size: 22px;
+}
+.skill{
+  border-radius: 50px;
+  margin: 50px 20px; 
+  height: 30px;
+  background-color: lightgray;
+}
+.skillBar{
+    background-color: #009688;
+    width: 80%;
+    border-radius: 50px;
+    height: 100%;
+}
+.k2{
+    width: 90%;
+}
+.k3{
+    width: 70%;
+}
+.k4{
+    width: 95%;
+}
+.skillLabel{
+    margin-left: 16px;
+    font-style: oblique;
+}
+i{
+    color: white;
+    margin-left: 70px;
+}
+
+/* item2 */
+.item2 {
+   
+    grid-area: content1;
+}
+.h1Icon::before {
+    font-size: 26px;
+  }
+.h2Icon::before {
+    font-size: 22px;
+  }
+h1, h2{
+    margin-left: 16px;
+}
+
+/* item3 */
+.item3 {
+    grid-area: content2;
+}
+
+/* item4 */
+.item4 {
+    background-color: #009688;
+    grid-area: footer;
+    color: whitesmoke;
+    padding-left: 60px;
+}
+.item4>h1::before{
+    color: whitesmoke;
+}
+
+/* for RWD */
+@media(min-width: 400px) {
+    .container {
+        grid-template-areas:
+            "header content1 content1"
+            "header content1 content1"
+            "header content2 content2"
+            "header content2 content2"
+            "footer footer footer"
+    }
+}
+@media(max-width: 400px) {
+    .container {
+        grid-template-areas:
+            "header"
+            "content1"
+            "content2"
+            "footer"
+    }
+}
