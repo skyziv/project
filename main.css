@@ -1,7 +1,5 @@
 /* layout and globel */
-@import url(http://weloveiconfonts.com/api/?family=entypo);
-[class*="entypo-"]:before {
-  font-family: 'entypo', sans-serif;
+[class*="fa-"]:before {
   color: #009688;
   font-size: 16px;
   margin: 15px;
@@ -34,7 +32,8 @@ img{
 }
 .title{
     font-weight: 700;
-    font-size: 22px;
+    width: 100%;
+    font-size: 20px;
 }
 .skill{
   border-radius: 50px;
@@ -60,6 +59,8 @@ img{
 .skillLabel{
     margin-left: 16px;
     font-style: oblique;
+    font-weight: 800;
+    font-size: 18px;
 }
 i{
     color: white;
@@ -67,9 +68,11 @@ i{
 }
 
 /* item2 */
-.item2 {
-   
+.item2 { 
     grid-area: content1;
+}
+.h1Icon, .h2Icon{
+    width: 100%;
 }
 .h1Icon::before {
     font-size: 26px;
